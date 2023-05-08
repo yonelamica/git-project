@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>My Portfolio Website</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/636320fbfc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+             
+                <img src="mica_logo.png" />
+               
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer </p>
+                <h1>Hi, I'm <span><br>Yonela</span><br /> Mrubata from Cape Town</h1>
+
+            </div>
+        </div>
+    </div>
+    <!----about---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mica.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Me</h1>
+                    <p>Studied Electrical Engineering at College of Cape Town, Self-taught Developer<span><br>Studied Software Engineering at Hperion Dev</span><br /></p>
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <!-------------------Skills------------------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br />Web App Development</li>
+                            <li><span>App Development</span><br />Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+
+                    <!-------------------Experience------------------------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br />Cast Liason at Kayos Casting Directors.</li>
+                            <li><span>2021 - 2022</span><br />Technical Support.</li>
+                            <li><span>2020</span><br />Assistant Fibre Optic Technician at Motivity.</li>
+                        </ul>
+                    </div>
+
+                    <!-------------------Education------------------------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br />Technical Support.</li>
+                            <li><span>2017 - 2020</span><br />Electrical Engineering.</li>
+                            <li><span>Nov 2022 - Arpil 2023</span><br />Software Engineering at Hyperion Dev.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------services------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        I specialize in
+                        designing clean Websites at a reasonable costs, with so much quality.
+                        Very good at my work.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>
+                        I specialize in designing Websites and Apps at a reasonable costs, with so much quality.
+                        Very good at my work.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>
+                        I specialize in designing Websites and Apps at a reasonable costs, with so much quality.
+                        Very good at my work.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------------portfolio/my work---------------------------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work-1.png" />
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            This app connects you to various talented people around the world.
+                            Download it from play store now.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="work-2.png" />
+
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>
+                            This app connects you to various talented people around the world. It allows you to listen to your music of your choice online & offline.
+                            Download it from play store now.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" />
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>
+                            This app allows you to shop online and your favorite clothing choice can be delivered at your door, without having to visit the store.
+                            Download it from play store now.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    
+
+
+    <!------------------------contact---------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-tittle">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>mrubatamica@gmail.com</p>
+                    <p><i class="fa-sharp fa-solid fa-square-phone"></i>0679391835</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="my cv.pdf" dowload class="btn btn2">Dowload Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email address" required />
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @Yonela Mica. Made with <i class="fa-solid fa-heart"></i></p>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+    <!------------------------------contact form google drive sheet------------------------------------->
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwaADnKDoJ6IiAHNy6hvS3NTOgNZn004LODGjSV4YRovvQPmRiqUK9jlbCUOSQERULE/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+
+                    }, 5000)
+
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+
+
+</body>
+</html>
